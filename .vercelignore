@@ -1,0 +1,4 @@
+# Ignore everything except models and app
+!.vercelignore
+!models/**
+!app/**
