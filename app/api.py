@@ -313,9 +313,9 @@ async def predict(transaction: Transaction):
         return {
             "transaction_id": input_dict['transaction_id'],
             "is_fraud": is_fraud,
-            "fraud_source": "model",
-            "fraud_reason": ", ".join(fraud_reason) if fraud_reason else "clean",
-            "fraud_score": round(max_score, 4)
+            # "fraud_source": "model",
+            # "fraud_reason": ", ".join(fraud_reason) if fraud_reason else "clean",
+            # "fraud_score": round(max_score, 4)
         }
 
     except Exception as e:
